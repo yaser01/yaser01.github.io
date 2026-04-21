@@ -31,8 +31,8 @@ Place your hexagon logo as `assets/logo.png` — it loads automatically. If miss
 
 ## Add Your CV
 
-- Place English CV as `assets/cv-en.pdf`
-- Place Arabic CV as `assets/cv-ar.pdf`
+- Place English CV as `assets/Yasser-Milato-en.pdf`
+- Place Arabic CV as `assets/Yasser-Milato-ar.pdf`
 
 The Download CV button switches between them automatically based on the selected language.
 
@@ -58,8 +58,8 @@ my-portfolio/
 │   ├── style.css     # All CSS
 │   ├── avatar.svg    # Placeholder — replace with avatar.jpg
 │   ├── logo.png      # Your hexagon logo (you provide)
-│   ├── cv-en.pdf     # English CV (you provide)
-│   └── cv-ar.pdf     # Arabic CV (you provide)
+│   ├── Yasser-Milato-en.pdf  # English CV (you provide)
+│   └── Yasser-Milato-ar.pdf  # Arabic CV (you provide)
 ├── README.md
 └── .nojekyll         # Required for GitHub Pages asset serving
 ```

@@ -43,15 +43,29 @@
     <section id="home" class="hero">
       <canvas id="particles-canvas"></canvas>
       <div class="hero-content">
-        <h1 class="hero-name">Yasser</h1>
+        <h1 class="hero-name" data-i18n="hero_name">Yasser Milato</h1>
         <p class="hero-role">
           <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
         </p>
         <p class="hero-tagline" data-i18n="hero_tagline">Building robust backends, open-source tools, and smart bots.</p>
         <div class="hero-ctas">
           <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">View Projects</a>
-          <a href="assets/cv-en.pdf" class="btn btn-secondary cv-btn" data-i18n="hero_cta_cv" download>Download CV</a>
+          <a href="assets/Yasser-Milato-en.pdf" class="btn btn-secondary cv-btn" data-i18n="hero_cta_cv" download>Download CV</a>
           <a href="#contact"  class="btn btn-outline"  data-i18n="hero_cta_contact">Contact</a>
+        </div>
+        <div class="stats-row hero-stats">
+          <div class="stat-item" data-stat="stars">
+            <span class="stat-number" data-target="593">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label" data-i18n="stat_stars">GitHub Stars</span>
+          </div>
+          <div class="stat-item" data-stat="downloads">
+            <span class="stat-number" data-target="53000">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label" data-i18n="stat_downloads">Downloads</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label" data-i18n="stat_bots">Telegram Bots</span>
+          </div>
         </div>
       </div>
       <div class="scroll-indicator" aria-hidden="true">
@@ -63,25 +77,11 @@
     <section id="about" class="section">
       <div class="about-grid animate-on-scroll">
         <div class="about-avatar-wrap">
-          <img src="assets/avatar.svg" alt="Yasser avatar" class="avatar-img" />
+          <img src="assets/avatar.png" alt="Yasser avatar" class="avatar-img" />
         </div>
         <div class="about-text">
           <h2 class="section-title" data-i18n="about_title">About Me</h2>
           <p class="about-bio" data-i18n="about_bio">I'm a backend developer at Asinnah — a Syria-based software company building digital products including an online learning platform (Asinnah Academy), a VPN service, and ad management tools. I also freelance, specializing in Telegram bots and web scraping. I'm the creator of MKV Muxing Batch GUI — an open-source desktop app with 593+ GitHub stars and 53,000+ downloads.</p>
-          <div class="stats-row">
-            <div class="stat-item animate-on-scroll" style="transition-delay:0ms">
-              <span class="stat-number" data-target="593">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label" data-i18n="stat_stars">GitHub Stars</span>
-            </div>
-            <div class="stat-item animate-on-scroll" style="transition-delay:100ms">
-              <span class="stat-number" data-target="53000">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label" data-i18n="stat_downloads">Downloads</span>
-            </div>
-            <div class="stat-item animate-on-scroll" style="transition-delay:200ms">
-              <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label" data-i18n="stat_bots">Telegram Bots</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -90,8 +90,19 @@
     <section id="skills" class="section">
       <h2 class="section-title centered animate-on-scroll" data-i18n="skills_title">Skills &amp; Stack</h2>
       <div class="skills-grid">
-        <div class="skill-category animate-on-scroll" style="transition-delay:0ms">
-          <h3 class="category-label" data-i18n="cat_backend">Backend</h3>
+
+        <div class="skill-card" data-dir="tl">
+          <div class="skill-card-bg" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l2 2-2 2M11 12h4"/></svg>
+          </div>
+          <div class="skill-card-head">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l2 2-2 2M11 12h4"/></svg>
+            </div>
+            <div class="skill-card-meta">
+              <h3 data-i18n="cat_backend">Backend</h3>
+            </div>
+          </div>
           <div class="badge-cluster">
             <span class="badge">Python</span>
             <span class="badge">FastAPI</span>
@@ -100,24 +111,57 @@
             <span class="badge">REST APIs</span>
           </div>
         </div>
-        <div class="skill-category animate-on-scroll" style="transition-delay:60ms">
-          <h3 class="category-label" data-i18n="cat_devops">DevOps &amp; Tools</h3>
+
+        <div class="skill-card" data-dir="tr">
+          <div class="skill-card-bg" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="skill-card-head">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <div class="skill-card-meta">
+              <h3 data-i18n="cat_devops">DevOps &amp; Tools</h3>
+            </div>
+          </div>
           <div class="badge-cluster">
             <span class="badge">Docker</span>
             <span class="badge">Git</span>
             <span class="badge">Linux</span>
           </div>
         </div>
-        <div class="skill-category animate-on-scroll" style="transition-delay:120ms">
-          <h3 class="category-label" data-i18n="cat_desktop">Desktop</h3>
+
+        <div class="skill-card" data-dir="bl">
+          <div class="skill-card-bg" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8M12 18v2"/><circle cx="8" cy="11" r="1.5"/><circle cx="12" cy="11" r="1.5"/><circle cx="16" cy="11" r="1.5"/></svg>
+          </div>
+          <div class="skill-card-head">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8M12 18v2"/><circle cx="8" cy="11" r="1.5"/><circle cx="12" cy="11" r="1.5"/><circle cx="16" cy="11" r="1.5"/></svg>
+            </div>
+            <div class="skill-card-meta">
+              <h3 data-i18n="cat_desktop">Desktop</h3>
+            </div>
+          </div>
           <div class="badge-cluster">
             <span class="badge">Qt</span>
             <span class="badge">PySide6</span>
             <span class="badge">PyInstaller</span>
           </div>
         </div>
-        <div class="skill-category animate-on-scroll" style="transition-delay:180ms">
-          <h3 class="category-label" data-i18n="cat_bots">Bots &amp; Automation</h3>
+
+        <div class="skill-card" data-dir="br">
+          <div class="skill-card-bg" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M12 2a2 2 0 0 1 2 2v1H10V4a2 2 0 0 1 2-2z"/><rect x="4" y="5" width="16" height="13" rx="2"/><circle cx="9" cy="11" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1.5" fill="currentColor" stroke="none"/><path d="M8 17v1M16 17v1"/><path d="M9 14h6"/></svg>
+          </div>
+          <div class="skill-card-head">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2v1H10V4a2 2 0 0 1 2-2z"/><rect x="4" y="5" width="16" height="13" rx="2"/><circle cx="9" cy="11" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1.5" fill="currentColor" stroke="none"/><path d="M8 17v1M16 17v1"/><path d="M9 14h6"/></svg>
+            </div>
+            <div class="skill-card-meta">
+              <h3 data-i18n="cat_bots">Bots &amp; Automation</h3>
+            </div>
+          </div>
           <div class="badge-cluster">
             <span class="badge">aiogram</span>
             <span class="badge">Telethon</span>
@@ -125,14 +169,53 @@
             <span class="badge">Playwright</span>
           </div>
         </div>
-        <div class="skill-category animate-on-scroll" style="transition-delay:240ms">
-          <h3 class="category-label" data-i18n="cat_other">Other</h3>
-          <div class="badge-cluster">
-            <span class="badge">Arabic NLP</span>
-            <span class="badge">Semantic Web</span>
-            <span class="badge">RDF/SPARQL</span>
+
+      </div>
+
+      <div class="skills-divider animate-on-scroll"></div>
+      <h3 class="skills-subheading centered animate-on-scroll" data-i18n="services_title">What Can I Do?</h3>
+      <div class="services-grid">
+
+        <div class="service-card animate-on-scroll" style="transition-delay:0ms">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l2 2-2 2M11 12h4"/></svg>
+            </div>
+            <h3 data-i18n="srv1_title">Backend &amp; API Development</h3>
           </div>
+          <p data-i18n="srv1_desc">Scalable REST APIs and backend systems with FastAPI, SQLAlchemy, and PostgreSQL. Authentication, Docker deployment, and clean architecture.</p>
         </div>
+
+        <div class="service-card animate-on-scroll" style="transition-delay:80ms">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 14.053l-2.95-.924c-.642-.2-.655-.642.134-.953l11.549-4.453c.537-.194 1.006.131.659.524z"/></svg>
+            </div>
+            <h3 data-i18n="srv2_title">Telegram Bot Development</h3>
+          </div>
+          <p data-i18n="srv2_desc">Custom Telegram bots for any use case — e-commerce, Islamic tools, automation, and moderation. Built with aiogram and Telethon.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="transition-delay:160ms">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8M12 18v2"/><circle cx="8" cy="11" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="1.2" fill="currentColor" stroke="none"/><circle cx="16" cy="11" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 data-i18n="srv3_title">Desktop App Development</h3>
+          </div>
+          <p data-i18n="srv3_desc">Cross-platform desktop apps with Qt and PySide6 — professional UI, PDF generation, data persistence, and packaged installers.</p>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="transition-delay:240ms">
+          <div class="service-card-head">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 data-i18n="srv4_title">Web Scraping &amp; Automation</h3>
+          </div>
+          <p data-i18n="srv4_desc">Automated data collection and browser automation using BeautifulSoup and Playwright — from simple scrapers to complex multi-step workflows.</p>
+        </div>
+
       </div>
     </section>
 
@@ -143,14 +226,26 @@
 
         <!-- MKV Muxing — FEATURED (full-width) -->
         <article class="project-card featured animate-on-scroll" style="transition-delay:0ms">
+          <div class="flagship-ribbon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span data-i18n="flagship_label">Flagship</span>
+          </div>
           <div class="card-header">
             <h3 class="card-title" data-i18n="p1_title">MKV Muxing Batch GUI</h3>
             <span class="badge-type open-source" data-i18n="badge_opensource">Open Source</span>
           </div>
           <p class="card-desc" data-i18n="p1_desc">A cross-platform desktop application for batch muxing MKV files with subtitles, audio tracks, and attachments. My flagship open-source project with 593+ GitHub stars and 53,000+ downloads.</p>
-          <div class="shields-row">
-            <img src="https://img.shields.io/github/stars/yaser01/mkv-muxing-batch-gui?style=flat-square&color=3b82f6" alt="Stars" crossorigin />
-            <img src="https://img.shields.io/github/downloads/yaser01/mkv-muxing-batch-gui/total?style=flat-square&color=3b82f6" alt="Downloads" crossorigin />
+          <div class="live-stats-row">
+            <div class="live-stat-pill" data-mkv-stat="stars">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span class="live-stat-num" data-target="593">0</span>
+              <span class="live-stat-label" data-i18n="stat_stars">GitHub Stars</span>
+            </div>
+            <div class="live-stat-pill" data-mkv-stat="downloads">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span class="live-stat-num" data-target="53000">0</span>
+              <span class="live-stat-label" data-i18n="stat_downloads">Downloads</span>
+            </div>
           </div>
           <div class="card-tags">
             <span class="tag">Python</span>
@@ -220,22 +315,6 @@
       </div>
     </section>
 
-    <!-- OPEN SOURCE -->
-    <section id="opensource" class="section">
-      <h2 class="section-title centered animate-on-scroll" data-i18n="os_title">Flagship Open Source Project</h2>
-      <div class="os-spotlight animate-on-scroll">
-        <h3 class="os-project-name">MKV Muxing Batch GUI</h3>
-        <div class="shields-row large">
-          <img src="https://img.shields.io/github/stars/yaser01/mkv-muxing-batch-gui?style=for-the-badge&color=3b82f6" alt="GitHub Stars" crossorigin />
-          <img src="https://img.shields.io/github/downloads/yaser01/mkv-muxing-batch-gui/total?style=for-the-badge&color=3b82f6" alt="Total Downloads" crossorigin />
-          <img src="https://img.shields.io/github/v/release/yaser01/mkv-muxing-batch-gui?style=for-the-badge&color=3b82f6" alt="Latest Release" crossorigin />
-          <img src="https://img.shields.io/github/last-commit/yaser01/mkv-muxing-batch-gui?style=for-the-badge&color=3b82f6" alt="Last Commit" crossorigin />
-        </div>
-        <p class="os-blurb" data-i18n="os_blurb">I believe in building tools that are free, open, and genuinely useful. MKV Muxing Batch GUI started as a personal need and grew into a community-trusted tool with users across the globe.</p>
-        <a href="https://github.com/yaser01/mkv-muxing-batch-gui" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="os_btn">View on GitHub</a>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="section">
       <h2 class="section-title centered animate-on-scroll" data-i18n="contact_title">Let's Connect</h2>
@@ -263,11 +342,6 @@
           <span class="contact-handle">Yasser Space</span>
           <span class="contact-platform" data-i18n="contact_channel">Projects Channel</span>
         </a>
-        <a href="https://t.me/Armor_services" class="contact-card animate-on-scroll" style="transition-delay:320ms" target="_blank" rel="noopener">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 14.053l-2.95-.924c-.642-.2-.655-.642.134-.953l11.549-4.453c.537-.194 1.006.131.659.524z"/></svg>
-          <span class="contact-handle">@Armor_services</span>
-          <span class="contact-platform">Armor Services</span>
-        </a>
       </div>
     </section>
 
@@ -290,6 +364,7 @@
   // ── i18n ──────────────────────────────────────────────────────────────────
   const translations = {
     en: {
+      hero_name:        'Yasser Milato',
       nav_about:        'About',
       nav_skills:       'Skills',
       nav_projects:     'Projects',
@@ -308,14 +383,14 @@
       cat_devops:       'DevOps & Tools',
       cat_desktop:      'Desktop',
       cat_bots:         'Bots & Automation',
-      cat_other:        'Other',
       projects_title:   'Projects',
       badge_opensource: 'Open Source',
       badge_freelance:  'Freelance',
       badge_work:       'Work',
       badge_private:    'Private',
+      flagship_label:   'Flagship',
       p1_title:         'MKV Muxing Batch GUI',
-      p1_desc:          'A cross-platform desktop application for batch muxing MKV files with subtitles, audio tracks, and attachments. My flagship open-source project with 593+ GitHub stars and 53,000+ downloads.',
+      p1_desc:          'A cross-platform desktop application for batch muxing MKV files with subtitles, audio tracks, and attachments.',
       p2_title:         'USCIS Form Filler',
       p2_desc:          'A professional Windows desktop application that streamlines filling USCIS immigration forms (I-90, I-485, I-912). Features real-time validation, PDF export, data persistence with .usform files, and a modern Qt interface. Built for immigration attorneys, legal professionals, and consultants.',
       p3_title:         'Asinnah Learning Platform',
@@ -324,54 +399,67 @@
       p4_desc:          '10+ custom Telegram bots built for diverse clients \u2014 including @QuranCompletionBot (Quran reading tracker), @GoldZakatBot (gold Zakat calculator), @Mofarighbot (free-time activity suggester), and @Armor_Services_Bot (service management bot with 2,100+ subscribers). Covering e-commerce, Islamic tools, automation, and moderation.',
       link_live:        'Live',
       link_channel:     'Channel',
-      os_title:         'Flagship Open Source Project',
-      os_blurb:         'I believe in building tools that are free, open, and genuinely useful. MKV Muxing Batch GUI started as a personal need and grew into a community-trusted tool with users across the globe.',
-      os_btn:           'View on GitHub',
       contact_title:    "Let's Connect",
       contact_sub:      'Find me on the platforms below',
       contact_channel:  'Projects Channel',
+      services_title:   'What Can I Do?',
+      srv1_title:       'Backend & API Development',
+      srv1_desc:        'Scalable REST APIs and backend systems with FastAPI, SQLAlchemy, and PostgreSQL. Authentication, Docker deployment, and clean architecture.',
+      srv2_title:       'Telegram Bot Development',
+      srv2_desc:        'Custom Telegram bots for any use case — e-commerce, Islamic tools, automation, and moderation. Built with aiogram and Telethon.',
+      srv3_title:       'Desktop App Development',
+      srv3_desc:        'Cross-platform desktop apps with Qt and PySide6 — professional UI, PDF generation, data persistence, and packaged installers.',
+      srv4_title:       'Web Scraping & Automation',
+      srv4_desc:        'Automated data collection and browser automation using BeautifulSoup and Playwright — from simple scrapers to complex multi-step workflows.',
     },
     ar: {
-      nav_about:        '\u0639\u0646',
-      nav_skills:       '\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a',
-      nav_projects:     '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
-      nav_contact:      '\u062a\u0648\u0627\u0635\u0644',
-      hero_tagline:     '\u0623\u0628\u0646\u064a \u062e\u0648\u0627\u062f\u0645 \u0642\u0648\u064a\u0629\u060c \u0623\u062f\u0648\u0627\u062a \u0645\u0641\u062a\u0648\u062d\u0629 \u0627\u0644\u0645\u0635\u062f\u0631\u060c \u0648\u0628\u0648\u062a\u0627\u062a \u0630\u0643\u064a\u0629.',
-      hero_cta_projects:'\u0645\u0634\u0627\u0631\u064a\u0639\u064a',
-      hero_cta_cv:      '\u062a\u062d\u0645\u064a\u0644 \u0627\u0644\u0633\u064a\u0631\u0629 \u0627\u0644\u0630\u0627\u062a\u064a\u0629',
-      hero_cta_contact: '\u062a\u0648\u0627\u0635\u0644',
-      about_title:      '\u0639\u0646\u064a',
-      about_bio:        '\u0623\u0646\u0627 \u0645\u0637\u0648\u0651\u0631 \u062e\u0644\u0641\u064a \u0641\u064a \u0634\u0631\u0643\u0629 \u0623\u0633\u064a\u0646\u0627\u0647\u060c \u0634\u0631\u0643\u0629 \u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0633\u0648\u0631\u064a\u0629 \u062a\u0628\u0646\u064a \u0645\u0646\u062a\u062c\u0627\u062a \u0631\u0642\u0645\u064a\u0629 \u062a\u0634\u0645\u0644 \u0645\u0646\u0635\u0629 \u062a\u0639\u0644\u064a\u0645\u064a\u0629 (\u0623\u0643\u0627\u062f\u064a\u0645\u064a\u0629 \u0623\u0633\u064a\u0646\u0627\u0647)\u060c \u062e\u062f\u0645\u0629 VPN\u060c \u0648\u0623\u062f\u0648\u0627\u062a \u0625\u062f\u0627\u0631\u0629 \u0625\u0639\u0644\u0627\u0646\u0627\u062a. \u0623\u0639\u0645\u0644 \u0623\u064a\u0636\u0627\u064b \u0628\u0634\u0643\u0644 \u0645\u0633\u062a\u0642\u0644 \u0645\u062a\u062e\u0635\u0635\u0627\u064b \u0641\u064a \u0628\u0648\u062a\u0627\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645 \u0648\u062a\u062c\u0631\u064a\u0641 \u0627\u0644\u0648\u064a\u0628. \u0623\u0646\u0627 \u0645\u0628\u062a\u0643\u0631 \u062a\u0637\u0628\u064a\u0642 MKV Muxing Batch GUI \u2014 \u062a\u0637\u0628\u064a\u0642 \u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631 \u062d\u0635\u062f \u0623\u0643\u062b\u0631 \u0645\u0646 593 \u0646\u062c\u0645\u0629 \u0639\u0644\u0649 GitHub \u0648\u062a\u062c\u0627\u0648\u0632 53\u060c000 \u062a\u0646\u0632\u064a\u0644.',
-      stat_stars:       '\u0646\u062c\u0648\u0645 GitHub',
-      stat_downloads:   '\u062a\u0646\u0632\u064a\u0644',
-      stat_bots:        '\u0628\u0648\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645',
-      skills_title:     '\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0623\u062f\u0648\u0627\u062a',
-      cat_backend:      '\u0627\u0644\u062e\u0644\u0641\u064a\u0629',
-      cat_devops:       '\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u062a\u0637\u0648\u064a\u0631',
-      cat_desktop:      '\u0633\u0637\u062d \u0627\u0644\u0645\u0643\u062a\u0628',
-      cat_bots:         '\u0627\u0644\u0628\u0648\u062a\u0627\u062a \u0648\u0627\u0644\u0623\u062a\u0645\u062a\u0629',
-      cat_other:        '\u0623\u062e\u0631\u0649',
-      projects_title:   '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
-      badge_opensource: '\u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631',
-      badge_freelance:  '\u0641\u0631\u064a\u0644\u0627\u0646\u0633',
-      badge_work:       '\u0639\u0645\u0644',
-      badge_private:    '\u062e\u0627\u0635',
+      hero_name:        'ياسر ميلاتو',
+      nav_about:        'نبذة',
+      nav_skills:       'المهارات',
+      nav_projects:     'المشاريع',
+      nav_contact:      'تواصل',
+      hero_tagline:     'أصنع خوادم موثوقة، وأدوات مفتوحة المصدر، وبوتات ذكيّة تُنجز المهمّة.',
+      hero_cta_projects:'استعرض المشاريع',
+      hero_cta_cv:      'تحميل السيرة الذاتيّة',
+      hero_cta_contact: 'تواصل معي',
+      about_title:      'نبذة عنّي',
+      about_bio:        'مطور برمجيات في شركة "أسنّة"، شركة برمجيّات سوريّة تبني منتجات رقميّة، من بينها منصّة Asinnah Academy التعليميّة، وخدمة VPN، وأدوات لإدارة الإعلانات. أعمل كذلك بشكل مستقل، متخصّصاً ببوتات تيليغرام وتجميع البيانات من الويب. صاحب تطبيق MKV Muxing Batch GUI مفتوح المصدر، الذي تخطّى 593 نجمة على GitHub وأكثر من 53,000 تنزيل.',
+      stat_stars:       'نجوم GitHub',
+      stat_downloads:   'تنزيل',
+      stat_bots:        'بوت تيليغرام',
+      skills_title:     'المهارات والأدوات',
+      cat_backend:      'مهارات Backend',
+      cat_devops:       'أدوات DevOps',
+      cat_desktop:      'تطبيقات سطح المكتب',
+      cat_bots:         'بوتات وأتمتة',
+      projects_title:   'المشاريع',
+      badge_opensource: 'Open Source',
+      badge_freelance:  'Freelance',
+      badge_work:       'Work',
+      badge_private:    'Private',
+      flagship_label:   'المشروع الرئيسيّ',
       p1_title:         'MKV Muxing Batch GUI',
-      p1_desc:          '\u062a\u0637\u0628\u064a\u0642 \u0633\u0637\u062d \u0645\u0643\u062a\u0628 \u0645\u062a\u0639\u062f\u062f \u0627\u0644\u0645\u0646\u0635\u0627\u062a \u0644\u062f\u0645\u062c \u0645\u0644\u0641\u0627\u062a MKV \u062f\u0641\u0639\u0629\u064b \u0648\u0627\u062d\u062f\u0629 \u0645\u0639 \u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a \u0648\u0627\u0644\u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a\u064a\u0629 \u0648\u0627\u0644\u0645\u0631\u0641\u0642\u0627\u062a. \u0645\u0634\u0631\u0648\u0639\u064a \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631 \u0628\u0623\u0643\u062b\u0631 \u0645\u0646 593 \u0646\u062c\u0645\u0629 \u0648\u062a\u062c\u0627\u0648\u0632 53\u060c000 \u062a\u0646\u0632\u064a\u0644.',
+      p1_desc:          'تطبيق سطح مكتب متعدّد المنصّات لدمج ملفّات MKV دفعةً واحدة مع الترجمات والمسارات الصوتيّة والمرفقات.',
       p2_title:         'USCIS Form Filler',
-      p2_desc:          '\u062a\u0637\u0628\u064a\u0642 \u0633\u0637\u062d \u0645\u0643\u062a\u0628 \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0644\u0640 Windows \u064a\u064f\u0628\u0633\u0651\u0637 \u0645\u0644\u0621 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0647\u062c\u0631\u0629 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 (I-90, I-485, I-912). \u064a\u062a\u0636\u0645\u0646 \u0627\u0644\u062a\u062d\u0642\u0642 \u0627\u0644\u0641\u0648\u0631\u064a \u0645\u0646 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a\u060c \u062a\u0635\u062f\u064a\u0631 PDF\u060c \u062d\u0641\u0638 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0635\u064a\u063a\u0629 .usform\u060c \u0648\u0648\u0627\u062c\u0647\u0629 Qt \u0639\u0635\u0631\u064a\u0629. \u0645\u064f\u0635\u0645\u064e\u0651\u0645 \u0644\u0644\u0645\u062d\u0627\u0645\u064a\u0646 \u0648\u0645\u0633\u062a\u0634\u0627\u0631\u064a \u0627\u0644\u0647\u062c\u0631\u0629.',
-      p3_title:         '\u0645\u0646\u0635\u0629 \u0623\u0633\u064a\u0646\u0627\u0647 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629',
-      p3_desc:          '\u0627\u0644\u062e\u0644\u0641\u064a\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0629 \u0644\u0623\u0643\u0627\u062f\u064a\u0645\u064a\u0629 \u0623\u0633\u064a\u0646\u0627\u0647 \u2014 \u0645\u0646\u0635\u0629 \u062a\u0639\u0644\u064a\u0645\u064a\u0629 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u062a\u062e\u062f\u0645 \u0623\u0643\u062b\u0631 \u0645\u0646 450 \u0637\u0627\u0644\u0628\u0627\u064b. \u062a\u0634\u0645\u0644 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0642\u0631\u0631\u0627\u062a\u060c \u0648\u0627\u062c\u0647\u0627\u062a \u0627\u0644\u0645\u062d\u062a\u0648\u0649\u060c \u0645\u0635\u0627\u062f\u0642\u0629 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646\u060c \u0648\u0647\u064a\u0643\u0644\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629.',
-      p4_title:         '\u0628\u0648\u062a\u0627\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645 (\u0641\u0631\u064a\u0644\u0627\u0646\u0633)',
-      p4_desc:          '\u0623\u0643\u062b\u0631 \u0645\u0646 10 \u0628\u0648\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645 \u0645\u062e\u0635\u0635 \u0644\u0639\u0645\u0644\u0627\u0621 \u0645\u062a\u0646\u0648\u0639\u064a\u0646 \u2014 \u062a\u0634\u0645\u0644 @QuranCompletionBot (\u0645\u062a\u062a\u0628\u0639 \u062e\u062a\u0645 \u0627\u0644\u0642\u0631\u0622\u0646)\u060c @GoldZakatBot (\u062d\u0627\u0633\u0628\u0629 \u0632\u0643\u0627\u0629 \u0627\u0644\u0630\u0647\u0628)\u060c @Mofarighbot (\u0645\u0642\u062a\u0631\u062d \u0623\u0646\u0634\u0637\u0629 \u0648\u0642\u062a \u0627\u0644\u0641\u0631\u0627\u063a)\u060c \u0648@Armor_Services_Bot (\u0628\u0648\u062a \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0628\u0623\u0643\u062b\u0631 \u0645\u0646 2\u060c100 \u0645\u0634\u062a\u0631\u0643). \u062a\u063a\u0637\u064a \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629\u060c \u0627\u0644\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u0625\u0633\u0644\u0627\u0645\u064a\u0629\u060c \u0627\u0644\u0623\u062a\u0645\u062a\u0629\u060c \u0648\u0627\u0644\u0625\u0634\u0631\u0627\u0641.',
-      link_live:        '\u0632\u064a\u0627\u0631\u0629',
-      link_channel:     '\u0627\u0644\u0642\u0646\u0627\u0629',
-      os_title:         '\u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631',
-      os_blurb:         '\u0623\u0624\u0645\u0646 \u0628\u0628\u0646\u0627\u0621 \u0623\u062f\u0648\u0627\u062a \u0645\u062c\u0627\u0646\u064a\u0629 \u0648\u0645\u0641\u062a\u0648\u062d\u0629 \u0648\u0630\u0627\u062a \u0642\u064a\u0645\u0629 \u062d\u0642\u064a\u0642\u064a\u0629. \u0628\u062f\u0623 MKV Muxing Batch GUI \u0643\u062d\u0627\u062c\u0629 \u0634\u062e\u0635\u064a\u0629 \u0648\u0646\u0645\u0627 \u0644\u064a\u0635\u0628\u062d \u0623\u062f\u0627\u0629\u064b \u0645\u0648\u062b\u0648\u0642\u0629 \u0644\u062f\u0649 \u0645\u062c\u062a\u0645\u0639 \u0645\u0646 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645.',
-      os_btn:           '\u0639\u0631\u0636 \u0639\u0644\u0649 GitHub',
-      contact_title:    '\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u064a',
-      contact_sub:      '\u064a\u0645\u0643\u0646\u0643 \u0625\u064a\u062c\u0627\u062f\u064a \u0639\u0644\u0649 \u0627\u0644\u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0627\u0644\u064a\u0629',
-      contact_channel:  '\u0642\u0646\u0627\u0629 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
+      p2_desc:          'تطبيق سطح مكتب احترافيّ على Windows يُبسّط تعبئة نماذج الهجرة الأمريكيّة (I-90, I-485, I-912). يدعم التحقّق الفوريّ من البيانات، وتصدير PDF، وحفظ الملفّات بصيغة .usform، بواجهة Qt حديثة. مُصمَّم للمحامين ومستشاري الهجرة.',
+      p3_title:         'منصّة Asinnah التعليميّة',
+      p3_desc:          'المسؤول عن تطوير الـ backend لمنصّة Asinnah Academy — منصّة تعليميّة متكاملة تخدم أكثر من 450 طالباً. تشمل إدارة المقرّرات، وواجهات المحتوى، ومصادقة المستخدمين، وهيكلة الوحدات التعليميّة.',
+      p4_title:         'بوتات تيليغرام (فريلانس)',
+      p4_desc:          'أكثر من 10 بوتات تيليغرام مُصمَّمة لعملاء مختلفين — منها @QuranCompletionBot (متتبّع ختم القرآن)، و@GoldZakatBot (حاسبة زكاة الذهب)، و@Mofarighbot (مقترح نشاطات لأوقات الفراغ)، و@Armor_Services_Bot (بوت لإدارة الخدمات يضمّ أكثر من 2,100 مشترك). تمتدّ بين التجارة الإلكترونيّة، والأدوات الإسلاميّة، والأتمتة، والإشراف.',
+      link_live:        'الموقع',
+      link_channel:     'القناة',
+      contact_title:    'لنتواصل',
+      contact_sub:      'تجدني على المنصّات التالية',
+      contact_channel:  'قناة المشاريع',
+      services_title:   'ماذا يمكنني أن أقدّم لك؟',
+      srv1_title:       'تطوير الـ Backend والـ APIs',
+      srv1_desc:        'تصميم وبناء واجهات REST API وأنظمة Backend قابلة للتوسّع باستخدام FastAPI و SQLAlchemy و PostgreSQL، مع أنظمة مصادقة، ونشر عبر Docker، وبنية نظيفة وقابلة للصيانة.',
+      srv2_title:       'تطوير بوتات تيليغرام',
+      srv2_desc:        'بوتات تيليغرام مخصّصة لأيّ هدف — من التجارة الإلكترونيّة إلى الأدوات الإسلاميّة، مروراً بالأتمتة وإدارة المجموعات. مبنيّة بـ aiogram و Telethon.',
+      srv3_title:       'تطوير تطبيقات سطح المكتب',
+      srv3_desc:        'تطبيقات سطح مكتب متعدّدة المنصّات بـ Qt و PySide6 — بواجهات احترافيّة، وتوليد ملفّات PDF، وتخزين بيانات موثوق، ومُثبِّتات جاهزة للتوزيع.',
+      srv4_title:       'تجميع البيانات وأتمتة الويب',
+      srv4_desc:        'جمع البيانات آليّاً وأتمتة المتصفّح باستخدام BeautifulSoup و Playwright — من سكربتات بسيطة إلى تدفّقات عمل متعدّدة الخطوات.',
     }
   };
 
@@ -386,7 +474,7 @@
       if (t[key] !== undefined) el.textContent = t[key];
     });
     const cvBtn = document.querySelector('.cv-btn');
-    if (cvBtn) cvBtn.href = lang === 'ar' ? 'assets/cv-ar.pdf' : 'assets/cv-en.pdf';
+    if (cvBtn) cvBtn.href = lang === 'ar' ? 'assets/Yasser-Milato-ar.pdf' : 'assets/Yasser-Milato-en.pdf';
     typewriterLang = lang;
     typewriterIndex = 0;
     typewriterCharIndex = 0;
@@ -411,7 +499,7 @@
   // ── Typewriter ───────────────────────────────────────────────────────────
   const typewriterRoles = {
     en: ['Backend Developer', 'Open Source Author', 'Telegram Bot Developer', 'Desktop App Developer'],
-    ar: ['\u0645\u0637\u0648\u0651\u0631 \u062e\u0644\u0641\u064a', '\u0645\u0628\u062a\u0643\u0631 \u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631', '\u0645\u0637\u0648\u0651\u0631 \u0628\u0648\u062a\u0627\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645', '\u0645\u0637\u0648\u0651\u0631 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0633\u0637\u062d \u0645\u0643\u062a\u0628'],
+    ar: ['مطور برمجيات', '\u0645\u0628\u062a\u0643\u0631 \u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631', '\u0645\u0637\u0648\u0651\u0631 \u0628\u0648\u062a\u0627\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645', '\u0645\u0637\u0648\u0651\u0631 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0633\u0637\u062d \u0645\u0643\u062a\u0628'],
   };
   const typewriterEl = document.getElementById('typewriter');
   let typewriterLang      = 'en';
@@ -529,42 +617,135 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.animate-on-scroll').forEach(el => animObserver.observe(el));
 
-  // ── Badge stagger ────────────────────────────────────────────────────────
-  const badgeObserver = new IntersectionObserver((entries) => {
+  // ── Skill card entrance + badge cascade ──────────────────────────────────
+  const dirMap = { tl: [-28,-20], tr: [28,-20], bl: [-28,20], br: [28,20] };
+  document.querySelectorAll('.skill-card').forEach(card => {
+    const [tx, ty] = dirMap[card.dataset.dir] || [0, 20];
+    card.style.transform = `translate(${tx}px,${ty}px)`;
+    card.style.opacity   = '0';
+  });
+  const skillCardObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.badge').forEach((b, i) => {
-          setTimeout(() => b.classList.add('visible'), i * 60);
+      if (!entry.isIntersecting) return;
+      const card = entry.target;
+      card.style.transition = 'opacity 0.55s ease, transform 0.55s ease, box-shadow 0.3s ease, border-color 0.3s ease';
+      card.style.opacity    = '1';
+      card.style.transform  = 'translate(0,0)';
+      setTimeout(() => {
+        card.querySelectorAll('.badge').forEach((b, i) => {
+          setTimeout(() => b.classList.add('visible'), i * 65);
         });
-      }
+      }, 260);
+      skillCardObserver.unobserve(card);
     });
-  }, { threshold: 0.2 });
-  document.querySelectorAll('.skill-category').forEach(c => badgeObserver.observe(c));
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.skill-card').forEach(c => skillCardObserver.observe(c));
 
-  // ── Stat counters ────────────────────────────────────────────────────────
+  // ── Stat counters + live GitHub stats ───────────────────────────────────
+  const STATS_CACHE_KEY = 'yaser01_gh_stats_v1';
+  const STATS_CACHE_TTL = 60 * 60 * 1000; // 1h
+  const GH_USER = 'yaser01';
+  const GH_FLAGSHIP_REPO = 'mkv-muxing-batch-gui';
+
   function animateCounter(el) {
-    const target   = parseInt(el.dataset.target, 10);
+    const target = parseInt(el.dataset.target, 10) || 0;
     const duration = 1500;
-    const step     = target / (duration / 16);
-    let current    = 0;
-    const timer = setInterval(() => {
+    const step = target / (duration / 16);
+    let current = 0;
+    if (el._counterTimer) clearInterval(el._counterTimer);
+    el._counterTimer = setInterval(() => {
       current = Math.min(current + step, target);
       el.textContent = current >= 1000
         ? Math.floor(current / 1000) + 'K'
         : Math.floor(current).toString();
-      if (current >= target) clearInterval(timer);
+      if (current >= target) clearInterval(el._counterTimer);
     }, 16);
   }
+
+  function applyStat(key, value) {
+    const targets = [
+      document.querySelector(`.hero-stats [data-stat="${key}"] .stat-number`),
+    ];
+    targets.forEach(item => {
+      if (!item) return;
+      const prev = parseInt(item.dataset.target, 10) || 0;
+      item.dataset.target = value;
+      if (value !== prev && item._animated) animateCounter(item);
+    });
+  }
+  function applyMkvStat(key, value) {
+    const item = document.querySelector(`[data-mkv-stat="${key}"] .live-stat-num`);
+    if (!item) return;
+    const prev = parseInt(item.dataset.target, 10) || 0;
+    item.dataset.target = value;
+    if (value !== prev && item._animated) animateCounter(item);
+  }
+
+  function readCache() {
+    try { return JSON.parse(localStorage.getItem(STATS_CACHE_KEY) || 'null'); }
+    catch { return null; }
+  }
+  function writeCache(data) {
+    try { localStorage.setItem(STATS_CACHE_KEY, JSON.stringify({ ...data, timestamp: Date.now() })); }
+    catch {}
+  }
+
+  async function fetchLiveStats() {
+    const reposRes = await fetch(`https://api.github.com/users/${GH_USER}/repos?per_page=100&type=owner`);
+    if (!reposRes.ok) throw new Error('repos');
+    const repos = await reposRes.json();
+    const nonForks = repos.filter(r => !r.fork);
+    const stars = nonForks.reduce((s, r) => s + (r.stargazers_count || 0), 0);
+    const mkvRepo = repos.find(r => r.name === GH_FLAGSHIP_REPO);
+    const mkvStars = mkvRepo ? (mkvRepo.stargazers_count || 0) : 0;
+
+    const relRes = await fetch(`https://api.github.com/repos/${GH_USER}/${GH_FLAGSHIP_REPO}/releases?per_page=100`);
+    if (!relRes.ok) throw new Error('releases');
+    const releases = await relRes.json();
+    const downloads = releases.reduce((sum, rel) =>
+      sum + (rel.assets || []).reduce((s, a) => s + (a.download_count || 0), 0), 0);
+
+    return { stars, downloads, mkvStars, mkvDownloads: downloads };
+  }
+
+  // 1) Apply cached values synchronously (before counter animation)
+  const cached = readCache();
+  if (cached) {
+    if (typeof cached.stars === 'number')        applyStat('stars', cached.stars);
+    if (typeof cached.downloads === 'number')    applyStat('downloads', cached.downloads);
+    if (typeof cached.mkvStars === 'number')     applyMkvStat('stars', cached.mkvStars);
+    if (typeof cached.mkvDownloads === 'number') applyMkvStat('downloads', cached.mkvDownloads);
+  }
+
+  // 2) Observe counter containers → animate once visible
   const statObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+        entry.target.querySelectorAll('.stat-number, .live-stat-num').forEach(el => {
+          el._animated = true;
+          animateCounter(el);
+        });
         statObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
-  const statsRow = document.querySelector('.stats-row');
-  if (statsRow) statObserver.observe(statsRow);
+  }, { threshold: 0.4 });
+  document.querySelectorAll('.stats-row, .live-stats-row').forEach(row => statObserver.observe(row));
+
+  // 3) Refresh from API in background (skip if cache is fresh)
+  const cacheFresh = cached && (Date.now() - (cached.timestamp || 0) < STATS_CACHE_TTL);
+  if (!cacheFresh) {
+    fetchLiveStats()
+      .then(fresh => {
+        console.log('[live-stats] fetched:', fresh);
+        writeCache(fresh);
+        applyStat('stars', fresh.stars);
+        applyStat('downloads', fresh.downloads);
+        applyMkvStat('stars', fresh.mkvStars);
+        applyMkvStat('downloads', fresh.mkvDownloads);
+      })
+      .catch(err => { console.warn('[live-stats] failed, keeping fallback:', err); });
+  }
+
   </script>
 </body>
 </html>
