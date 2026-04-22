@@ -618,6 +618,25 @@ button { font-family: inherit; }
   font-weight: 500;
 }
 .card-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+.bot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.bot-links a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding: 4px 12px;
+  border: 1px solid rgba(59,130,246,0.28);
+  border-radius: 100px;
+  transition: background var(--transition), border-color var(--transition);
+}
+.bot-links a:hover {
+  background: rgba(59,130,246,0.10);
+  border-color: var(--accent);
+}
 .badge-private {
   font-size: 0.75rem;
   font-weight: 600;
